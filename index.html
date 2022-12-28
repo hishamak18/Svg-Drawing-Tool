@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>svgDrawer</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <svg id="svgGrid" height="100vw" viewBox="0 0 300 300" fill="none" width="100vw" stroke-width="0.3"
+            stroke="lightblue">
+            <!-- X axis -->
+            <path d="
+     M 0 0   L 0 300
+     M 10 0  L 10 300
+     M 20 0  L 20 300
+     M 30 0  L 30 300
+     M 40 0  L 40 300
+     M 50 0  L 50 300
+     M 60 0  L 60 300
+     M 70 0  L 70 300
+     M 80 0  L 80 300
+     M 90 0  L 90 300
+     M 100 0 L 100 300
+     M 110 0 L 110 300
+     M 120 0 L 120 300
+     M 130 0 L 130 300
+     M 140 0 L 140 300
+     M 150 0 L 150 300
+     M 160 0 L 160 300
+     M 170 0 L 170 300
+     M 180 0 L 180 300
+     M 190 0 L 190 300
+     M 200 0 L 200 300
+     M 210 0 L 210 300
+     M 220 0 L 220 300
+     M 230 0 L 230 300
+     M 240 0 L 240 300
+     M 250 0 L 250 300
+     M 260 0 L 260 300
+     M 270 0 L 270 300
+     M 280 0 L 280 300
+     M 290 0 L 290 300
+     M 300 0 L 300 300
+  Z" />
+            <!-- y axis -->
+            <path d=" M 0 0 L 300 0
+ 
+            M 0 10 L 300 10
+ 
+            M 0 20 L 300 20 M 0 30 L 300 30 M 0 40 L 300 40
+  M 0 50 L 300 50
+  M 0 60 L 300 60
+  M 0 70 L 300 70
+  M 0 80 L 300 80
+  M 0 90 L 300 90
+  M 0 100 L 300 100
+  M 0 110 L 300 110
+  M 0 120 L 300 120
+  M 0 130 L 300 130
+  M 0 140 L 300 140
+  M 0 150 L 300 150
+  M 0 160 L 300 160
+  M 0 170 L 300 170
+  M 0 180 L 300 180
+  M 0 190 L 300 190
+  M 0 200 L 300 200
+  M 0 210 L 300 210
+  M 0 220 L 300 220
+  M 0 230 L 300 230
+  M 0 240 L 300 240
+  M 0 250 L 300 250
+  M 0 260 L 300 260
+  M 0 270 L 300 270
+  M 0 280 L 300 280
+  M 0 290 L 300 290
+ M 0 300 L 300 300
+  Z" />
+            <path id="drawPaths" stroke-width="1px" stroke="black" />
+            <g id="dotsGroup"></g>
+            <g id="sqGroup"></g>
+        <g id="circleGroup"></g>
+        </svg>
+
+    </div>
+    <div class="toolBox">
+        <button id="circleTool" class="circle btn">
+            <svg viewBox="0 0 8 8 " width="45px">
+                <circle cx="4" cy="4" r="2" stroke="black" fill="none" stroke-width="0.4"/>
+                    </svg>
+        </button>
+        <button id="squareTool" class="square btn">
+            <svg class="svgSquare" viewBox="0 0 8 8 " width="18px">
+                <path stroke-linejoin="round" fill="none" stroke-linecap="round" stroke="black" stroke-width="1.6" d="M 0 0 8 0 8 8 0 8 z" />
+                </svg>
+        </button>
+        <button id="penTool" class=" pen btn">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" height="30px" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L6.832 19.82a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897L16.863 4.487zm0 0L19.5 7.125" />
+              </svg>
+              
+        </button>
+        <button id="dragTool" class="drag btn">
+            <img src="./cursor.png" height="20px" alt="sd">
+        </button>
+        <button id="clr" class="clear btn"  ><svg xmlns="http://www.w3.org/2000/svg" width="30px"height="30px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
+          </svg>
+          </button>
+    </div>
+
+
+
+    <script src="./main.js"></script>
+</body>
+
+</html>

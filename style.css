@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+
+.container{
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+.toolBox{
+    position: absolute;
+    width: 80px;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    box-shadow:.3px 0px 20px 0px rgba(0, 0, 0, 0.24);
+    top: 250px;
+    left: 10px;
+    border-radius: 50px;
+}
+.toolBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+}
+.btn{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border:none;
+    position: relative;
+    box-shadow:.3px 0px 2px 0px rgba(0, 0, 0, 0.295);
+
+}
+.btn:hover{
+    background-color: rgba(212, 62, 62, 0.275);
+}
+.circle-dot{
+    /* fill: red; */
+    stroke: transparent;
+   }
+   .circle-dot:hover{
+     fill: red !important;
+   }
+.btn:active svg{
+    fill: black;
+}
+
+@media (max-width:477px) {
+   
+    .toolBox {
+        top: 0px;
+        left: 0;
+        border-radius: 0 10px 10px 0;
+
+    }
+}
+    
+
